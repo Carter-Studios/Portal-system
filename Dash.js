@@ -39,16 +39,15 @@ activateButton.addEventListener('click', () => {
 
   const searchBox = document.createElement('div');
   searchBox.className = 'search-box';
-  searchBox.style.backgroundColor = 'white';
-  searchBox.style.padding = '20px';
-  searchBox.style.borderRadius = '5px';
-  searchBox.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+
+  const closeButton = document.createElement('button');
+  closeButton.className = 'close-button';
+  closeButton.innerHTML = '×';
+  closeButton.onclick = () => overlay.remove();
 
   const iframe = document.createElement('iframe');
   iframe.src = 'https://www.google.com/search?igu=1';
-  iframe.width = '800';
-  iframe.height = '600';
-  iframe.style.border = 'none';
+  iframe.className = 'search-frame';
 
   // Add close functionality when clicking outside the search box
   overlay.addEventListener('click', (e) => {
