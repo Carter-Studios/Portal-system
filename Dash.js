@@ -60,3 +60,6 @@ activateButton.addEventListener('click', () => {
   overlay.appendChild(searchBox);
   document.body.appendChild(overlay);
 });
+document.getElementById('logout').addEventListener('click', function() {
+  window.location.href = 'index.html';
+})
