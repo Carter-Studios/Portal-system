@@ -34,6 +34,27 @@
  padding: 0 .2em;
  color: #2196f3;
 }
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  font-family: "Happy Monkey", system-ui;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+}
+
 .happy-monkey-regular {
   font-family: "Happy Monkey", system-ui;
   font-weight: 400;
