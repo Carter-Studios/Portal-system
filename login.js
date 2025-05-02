@@ -37,7 +37,7 @@ document.getElementById('login').addEventListener('click', async function(e) {
     if (userMatch) {
       window.location.href = 'dashboard.html';
     } else {
-      showError('Invalid username or password');
+      showError('');
     }
   } catch (error) {
     showError('Error during login');
